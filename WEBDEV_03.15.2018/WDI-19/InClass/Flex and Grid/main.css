@@ -1,0 +1,25 @@
+.parent{
+    height: 300px;
+    border: solid purple;
+    display: flex;
+}
+
+.child{
+    height: 60px;
+    width: 60px;
+    border: solid black;
+    color: white;
+    background: blue;
+    order: 0;
+
+}
+
+#two{
+    order: ;
+    background: yellow;
+}
+
+#three{
+    order: ;
+    background: red;
+}

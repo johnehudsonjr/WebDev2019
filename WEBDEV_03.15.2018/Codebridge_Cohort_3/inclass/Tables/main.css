@@ -1,0 +1,9 @@
+table{
+    border:solid black;
+}
+th{
+    border: solid orange;
+}
+td{
+    border: solid chartreuse;
+}

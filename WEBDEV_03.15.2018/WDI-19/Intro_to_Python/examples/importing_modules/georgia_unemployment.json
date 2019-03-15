@@ -1,0 +1,76 @@
+{
+	"data": [
+		{
+			"year": 2017,
+			"month": "M01",
+			"year_month": "2017 Jan",
+			"rate": 5.3
+		},
+		{
+			"year": 2017,
+			"month": "M02",
+			"year_month": "2017 Feb",
+			"rate": 5.2
+		},
+		{
+			"year": 2017,
+			"month": "M03",
+			"year_month": "2017 Mar",
+			"rate": 5.0
+		},
+		{
+			"year": 2017,
+			"month": "M04",
+			"year_month": "2017 Apr",
+			"rate": 4.9
+		},
+		{
+			"year": 2017,
+			"month": "M05",
+			"year_month": "2017 May",
+			"rate": 4.8
+		},
+		{
+			"year": 2017,
+			"month": "M06",
+			"year_month": "2017 Jun",
+			"rate": 4.7
+		},
+		{
+			"year": 2017,
+			"month": "M07",
+			"year_month": "2017 Jul",
+			"rate": 4.6
+		},
+		{
+			"year": 2017,
+			"month": "M08",
+			"year_month": "2017 Aug",
+			"rate": 4.5
+		},
+		{
+			"year": 2017,
+			"month": "M09",
+			"year_month": "2017 Sep",
+			"rate": 4.5
+		},
+		{
+			"year": 2017,
+			"month": "M10",
+			"year_month": "2017 Oct",
+			"rate": 4.5
+		},
+		{
+			"year": 2017,
+			"month": "M11",
+			"year_month": "2017 Nov",
+			"rate": 4.5
+		},
+		{
+			"year": 2017,
+			"month": "M12",
+			"year_month": "2017 Dec",
+			"rate": 4.5
+		}
+	]
+}

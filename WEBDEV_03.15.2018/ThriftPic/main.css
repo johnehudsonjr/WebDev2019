@@ -1,0 +1,15 @@
+html, body{
+    margin:0;
+    padding:0;
+    height: 100%;
+}
+
+.backgroundImage{
+    height: 100%;
+    margin: auto;
+    background: url(/images/IMG_0247.JPG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}

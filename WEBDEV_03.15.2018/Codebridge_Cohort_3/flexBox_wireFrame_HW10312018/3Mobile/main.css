@@ -1,0 +1,13 @@
+.container{
+border: solid yellow;
+display: flex;
+flex-wrap: wrap;
+}
+
+.tile{
+border: solid black;
+background: blue;
+width: 300px;
+height: 200px;
+flex-grow: 1;
+}

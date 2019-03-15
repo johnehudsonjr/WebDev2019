@@ -1,0 +1,84 @@
+html{
+ padding: 20px;
+}
+header{
+    background-image: url("/images/atlanta-skyline-at-dusk-downtown-color-panorama-jon-holiday.jpg");
+    color: black;
+    height: 200px;
+    font-family: 'Lobster', cursive;
+}
+
+
+h3{
+    padding-top: 20px;
+    padding-left: 40px;
+    
+}
+#headerH1{
+    text-align: center;
+    padding-top: 50px;
+    font-size: 100px;
+    text-shadow: 2px 4px white;
+}
+#scoreH1{
+    padding-top: 20px;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    
+}
+.wrapper{
+    padding-left: 40px;
+}
+
+.parentContainer{
+    display: flex;
+  
+
+}
+.wrapper{
+    display: flex;
+   
+}
+
+.scoreCount{
+    font-size: 50px;
+    text-align: center;
+}
+.showQuestionContainer{
+    border: solid black;
+    height: 300px;
+    width: 578px;
+
+}
+
+#submitIt{
+    margin-left: 40px;
+}
+#showQuestion{
+    font-size: 20px;
+    margin-left: 40px;
+}
+.category{
+    text-align: center;
+    padding-top: 40px;
+    font-size: 25px;
+    font-family: 'Lobster', cursive;
+}
+.question{
+    border: solid gray;
+    text-align: center;
+    height: 100px;
+    width: 200px;
+}
+
+.scoreBoard{
+    border:solid black;
+    height: 200px;
+    width: 600px;
+    width: 578px;
+}
+.category{
+    border: solid red;
+    height: 100px;
+    width: 200px;
+}

@@ -1,0 +1,22 @@
+#parent1{
+    border: solid yellow;
+    display: flex;
+}
+
+#parent2{
+    border: solid orange;
+    display: flex;
+}
+
+h2{
+    text-align: center;
+}
+
+.kid{
+    border: solid blue;
+    height: 200px;
+    width: 200px;
+    flex-grow: 1;
+    text-align: center;
+
+}

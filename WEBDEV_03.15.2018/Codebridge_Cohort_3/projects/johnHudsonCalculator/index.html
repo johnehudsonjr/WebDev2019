@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <!-- Created a parent container and then created a form and named it calc. -->
+    <div class="container">
+        
+     <form name="calc">
+         <!-- Created a table and used the input element to create a button for each item on calculator.
+        onclick calc.input.value pulls the value that is on button and displays in input field -->
+<!-- the equal sign uses the eval operator  and calculate what is in the input field -->
+        
+
+        <table>
+               
+            <tr>
+                <input type="text" name="input" size="16">            
+            </tr><br>
+            <tr>
+                <input type="button" name="nine" value="9" onclick="calc.input.value +='9'">
+                <input type="button" name="eight" value="8" onclick="calc.input.value +='8'">
+                <input type="button" name="seven" value="7" onclick="calc.input.value +='7'">
+                
+            </tr> <br>
+            <tr>
+                <input type="button" name="six" value="6" onclick="calc.input.value +='6'">
+                <input type="button" name="five" value="5" onclick="calc.input.value +='5'">
+                <input type="button" name="four" value="4" onclick="calc.input.value +='4'">
+               
+            </tr> <br>
+            <tr>
+                <input type="button" name="three" value="3" onclick="calc.input.value +='3'">
+                <input type="button" name="two" value="2" onclick="calc.input.value +='2'">
+                <input type="button" name="one" value="1" onclick="calc.input.value +='1'">
+                
+            </tr><br>
+            <tr>
+                <input type="button" name="zero" value="0" onclick="calc.input.value +='0'">
+                <input type="button" class="operator" name="avg" value="avg" onclick="average() +='avg'">
+                <input type="button" class="operator" name="divide" value="/" onclick="calc.input.value +='/'">
+    
+            </tr><br>
+            <tr>
+                <input type="button" class="operator" name="plus" value="+" onclick="calc.input.value +='+'">
+                <input type="button" class="operator" name="minus" value="-" onclick="calc.input.value +='-'">
+                <input type="button" class="operator" name="multiply" value="*" onclick="calc.input.value +='*'">
+            </tr><br>
+            <tr>
+                <input type="button" name="decimal" value="." onclick="calc.input.value +='.'">
+                <input type="button" name="clear" value="C" onclick="calc.input.value =''">
+                <input type="button" class="operator" name="equal" value="=" onclick="calc.input.value = eval(calc.input.value)">
+            </tr>
+        </table>
+    
+</form>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

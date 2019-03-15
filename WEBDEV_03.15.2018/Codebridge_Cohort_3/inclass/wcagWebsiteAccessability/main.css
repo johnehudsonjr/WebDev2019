@@ -1,0 +1,76 @@
+
+
+.bodyContainer{
+    display:grid;
+    border: solid;
+    height: 100vh;
+    width: 100%;
+    grid-template-columns: repeat(4,1fr);
+grid-template-rows: repeat(6,1fr);
+}
+.title{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    border: solid orange;
+}
+.p1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    border:solid green;
+}
+.c1{
+    grid-column-start: 2;
+    grid-column-end: 5;
+    border:solid yellow;
+
+}
+.p2{
+    grid-column-start: 5;
+    grid-column-end: 4;
+    border:solid orange;
+}
+.c2{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    border:solid blue;
+}
+.c3{
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    border:solid blue;
+}
+.p3{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    border:solid blue;
+}
+.form{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 7;
+    grid-row-end: 10;
+}
+footer{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    border:solid red;
+}
+
+
+
+Collapse 
+Message Input
+
+
+Message Tory Thompson
+
+About this conversation
+

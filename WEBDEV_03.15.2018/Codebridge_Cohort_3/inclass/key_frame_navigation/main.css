@@ -1,0 +1,58 @@
+/* .navContainer{
+    border: solid;
+    width: 50vw;
+    height: 30vh;
+    display: flex;
+    justify-content: space-between;
+    animation: moveNav 3s infinite;
+}
+.navItems{
+    width:100px;
+    border: solid blue;
+}
+@keyframes moveNav {
+    0%{
+        width: 50vw;
+    }
+    50%{
+        width: 100vw;
+    }
+    100%{
+        width: 50vw;
+       
+    }
+} */
+
+div{
+    height: 300px;
+    width: 300px;
+    border: solid;
+    animation: slideshow 10s infinite;
+    background-size: 100%;
+
+}
+
+@keyframes slideshow {
+    
+    0%{
+        background: aqua;
+        
+    }
+
+    25%{
+        background: url(images/2puppy.jpeg);
+        background-size: 100%;
+    }
+
+    50%{
+        background: url(images/dogtongue.jpeg);
+        background-size: 100%;
+
+    }
+
+    100%{
+        background: url(images/runningdog.jpeg);
+        background-size: 100%;
+    }
+
+}

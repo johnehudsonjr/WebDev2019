@@ -1,0 +1,21 @@
+nav{
+    display: flex;
+    justify-content: space-between; 
+
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+li{
+    display: none;
+}
+
+ul:hover li{
+    display:block;
+}

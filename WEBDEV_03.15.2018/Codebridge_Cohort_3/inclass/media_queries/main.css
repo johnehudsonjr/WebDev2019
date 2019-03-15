@@ -1,0 +1,14 @@
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: blueviolet;
+    border: solid;
+}
+
+@media(max-width:700px){
+    .box{
+        background-color: chartreuse;
+        margin-left:50px;
+        border: solid blue;
+    }
+}

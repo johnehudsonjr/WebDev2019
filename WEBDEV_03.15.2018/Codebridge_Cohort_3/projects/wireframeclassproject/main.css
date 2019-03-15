@@ -1,0 +1,66 @@
+
+.container{
+    border: solid orange;
+    display: grid;
+    grid-gap:10px;
+    height:100vh;
+    width:100vw;
+ 
+    /* These are the actual columns and rows 4 columns and 5 rows */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    
+    grid-template-areas:"header header header header "
+                        "nav imagea texta ad"
+                        "nav textb imageb ad"
+                        "nav  imagec textc ad"
+                        "footer footer footer footer"
+}
+
+.header{
+    border:solid;
+    grid-area:header;
+}
+.nav{
+    border:solid;
+    grid-area:nav;
+}
+
+.footer{
+    border: solid;
+    grid-area:footer;
+}
+.ad{
+    border:solid;
+    grid-area:ad;
+}
+.imagea{
+    border: solid;
+    grid-area:imagea;
+    background-color: blue;
+}
+
+.imageb{
+    border: solid;
+    grid-area: imageb;
+}
+
+.imagec{
+    border:solid;
+    grid-area: imagec;
+}
+
+.texta{
+    border: solid;
+    grid-area: texta;
+}
+
+.textb{
+    border: solid;
+    grid-area: textb;
+}
+
+.textc{
+    border: solid;
+    grid-area: textc;
+}

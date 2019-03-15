@@ -1,0 +1,101 @@
+.mainbox{
+    border: solid;
+    height: 495px;
+    width: 495px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 400px
+    
+}
+#hi{
+    position: absolute;
+    z-index: -1;
+    top: 65%;
+    width: 550px;
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+#red{
+    border: solid;
+    background: red;
+    width: 240px;
+    height: 240px;
+
+}
+
+#yellow{
+    border: solid;
+    background: yellow;
+    width: 240px;
+    height: 240px;
+    
+}
+
+#blue{
+    border: solid;
+    background: blue;
+    width: 240px;
+    height: 240px;
+    
+}
+#green{
+    border: solid;
+    background: green;
+    width: 240px;
+    height: 240px;
+    
+}
+
+@keyframes red1{
+    0%{
+
+    }
+    100%{
+        transform: translate(-300px,0px) rotate(90deg);
+    }
+}
+@keyframes blue1{
+    0%{
+
+    }
+    100%{
+        transform: translate(-300px,0px) rotate(-90deg);
+    }
+}
+
+@keyframes yellow1{
+    0%{
+
+    }
+    100%{
+        transform: translate(300px,0px) rotate(90deg);
+    }
+}
+
+@keyframes green1{
+    0%{
+
+    }
+    100%{
+        transform: translate(300px,0px) rotate(-90deg);
+    }
+}
+
+.mainbox:hover #red{
+    animation: red1 3s forwards;
+
+}
+.mainbox:hover #blue{
+    animation: blue1 3s forwards;
+
+}
+
+.mainbox:hover #yellow{
+    animation: yellow1 3s forwards;
+
+}
+.mainbox:hover #green{
+    animation: green1 3s forwards;
+
+}

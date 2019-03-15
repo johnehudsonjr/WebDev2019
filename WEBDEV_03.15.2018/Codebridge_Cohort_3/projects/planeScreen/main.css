@@ -1,0 +1,21 @@
+#plane{
+    height: 150px;
+    width: 250px;
+    margin-left: 300px;
+    position: absolute;
+    z-index: 2;
+}
+
+#background{
+    position: absolute;
+    z-index: -1;
+}
+
+#jumper{
+    height: 50px;
+    width: 50px;
+    margin-top: 45px;
+    margin-left: 375px;
+    position: relative;
+    z-index: 1;
+}

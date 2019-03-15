@@ -1,0 +1,35 @@
+/* grid-template-areas */
+.child{
+    border: solid;
+    display: grid;
+
+}
+
+.container{
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    border: solid orange;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "header header header"
+                          "nav blog blog"
+                          "nav blog blog"
+                          "footer footer footer"
+}
+
+.header{
+    grid-area: header;
+}
+
+.nav{
+    grid-area: nav;
+}
+
+.blog{
+    grid-area: blog;
+}
+
+.footer{
+    grid-area: footer;
+}

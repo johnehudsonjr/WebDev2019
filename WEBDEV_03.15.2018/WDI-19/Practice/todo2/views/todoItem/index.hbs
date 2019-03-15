@@ -1,0 +1,15 @@
+<ul>
+
+    {{#each items}}
+        <li>
+            {{title}} - {{date}} - {{completed}}
+        </li>
+    {{/each}}
+    
+</ul>
+
+<form action="/create" method="get">
+    <input type="text" name="title" placeholder="insert title">
+    <input type="number" name="coffeeLevel">
+    <input type="submit" value="create item">
+</form>

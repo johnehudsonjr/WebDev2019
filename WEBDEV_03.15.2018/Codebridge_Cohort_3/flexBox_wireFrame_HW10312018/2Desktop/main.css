@@ -1,0 +1,42 @@
+header{
+    width:100vw;
+    height:50px;
+}
+nav{
+    text-align: left;
+    padding:15px;
+  }
+
+  .restaurantHome{
+    border: solid yellow;
+    display: flex;
+    flex-wrap: wrap
+    
+  }
+  
+  .restaurant{
+    text-align: center;
+    border: solid blue;
+
+    height:100px;
+    width: 200px;
+    flex-grow: 1;
+  }
+
+  .socialMedia{
+    border: solid red;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    height: 100%;
+  }
+
+.social{
+    border:solid green;
+    height: 10%;
+    width: 10%;
+    padding: 40px;
+    flex-grow: 1;
+}
+
+  

@@ -1,0 +1,22 @@
+form{
+    height: 30vh;
+    width: 50vw;
+    border: solid gray;
+    text-align: center;
+    padding: 20px 20px 20px 20px;
+    margin: 20px 20px 20px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 5px 5px 10px;
+    background: url(images/funny.gif);
+    color: white
+}
+form:hover{
+ background-color: rgba(0, 0, 0, 0.201);
+}
+h3{
+   color: white;
+}
+input{
+text-align: center;
+}
+

@@ -1,0 +1,24 @@
+
+h1{
+    font-size: 30px;
+    color:tomato;
+    text-align: center;
+    margin: 150px
+}
+
+h2{
+    font-size: 30px;
+    color:turquoise;
+    text-align:center;
+    
+    
+}
+.para{
+    background: url("images/Desk.jpg") 100% fixed;
+    background-image: no-repeat;
+
+}
+.parainner{
+    padding: 300px;
+    background-color: rgba(0, 0, 0, 0.42)
+}

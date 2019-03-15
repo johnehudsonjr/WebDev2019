@@ -1,0 +1,39 @@
+.box{
+    border: solid gray;
+    width: 50vw;
+    height: 25vh;
+    position: absolute;
+    padding-top:100px;
+    text-align: center;
+/* To use index you must give everything a position */
+
+}
+/* you adjust the values of z index to bring things to the forefront */
+/* the highest number will be on the top or in the front */
+#box1{
+    background-color: purple;
+    margin-top: 50px;
+    z-index: 1;
+    margin-left: 25px
+}
+
+#box2{
+    background-color: green;
+    margin-top: 100px;
+    z-index:2;
+    margin-left: 50px
+}
+
+#box3{
+    background-color: red;
+    margin-top: 150px;
+    z-index: 3;
+    margin-left: 75px
+}
+
+#box4{
+    background-color: orange;
+    margin-top: 200px;
+    z-index: 4;
+    margin-left: 100px
+}

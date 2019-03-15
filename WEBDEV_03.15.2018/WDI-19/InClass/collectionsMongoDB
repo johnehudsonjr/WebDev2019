@@ -1,0 +1,32 @@
+ADD NEW COLLECTIONS
+db.restaurant.insert({ "name" : "Chick Fil A", "address": {"street": "32 ponce De leon ave", "zipcode": 30306}})
+db.restaurant.insert({ "name" : "Wendys'", "address": {"street": "34 ponce De leon ave", "zipcode": 30306}})
+db.restaurant.insert({ "name" : "Burger King", "address": {"street": "34 ponce De leon ave", "zipcode": 30306}})
+db.restaurant.insert({ "name" : "Waffle House", "address": {"street": "34 ponce De leon ave", "zipcode": 30306}})
+
+db.restaurant.find({"address.zipcode": 20001});
+
+
+UPDATE COLLECTION
+db.restaurant.update({
+    name: "Cracker Barrel"
+}, {
+    $set: {name: "Shake Shack"}
+})
+
+REMOVE DOCUMENT FROM COLLECTION BASED ON ID
+db.restaurant.remove({"_id" : ObjectId("5c1a6c2403b4d6d91904c327")})
+
+====================================
+Create a new db for jeopardy
+use jeopardy_db
+
+Create a collection(questions)for jeopardy_db
+db.questions.insert({ "question" : "Buzz?",  "answers": {"A.": "GA Tech", "B.": "GA State", "C.": "SCAD", "D.": "UCLA"}, "answer": 0, "points": 100})
+db.questions.insert({ "question" : "Art The Bee?",  "answers": {"A.": "GA Tech", "B.": "GA State", "C.": "SCAD", "D.": "UCLA"}, "answer": 2, "points": 100})
+db.questions.insert({ "question" : "Pounce?",  "answers": {"A.": "GA Tech", "B.": "GA State", "C.": "SCAD", "D.": "UCLA"}, "answer": 1, "points": 100})
+
+NEED TO UPDATE THE POINT VALUE FOR THE 2ND AND 3RD QUESTION
+
+With previous experience in social media management, marketing, and e-commerce selling, I enjoy creating engaged communities, understanding their wants and needs, and finding  and sharing solutions (products and services) to those areas.
+As a person who is currently learning web development, I am eager to take each of these elements and leverage technology to elevate each of these areas.

@@ -1,0 +1,169 @@
+
+/* =======  This is the background image on the front page. ======== */
+.backgroundImage{
+    height: 100vh;
+    width: 40vw;
+    background-image: url(/images/BookPhoto.png);
+    background-repeat:no-repeat;
+    background-position: center center;
+}
+
+/* ======= ENTER BUTTON ======== */
+#enter{
+    position: absolute;
+    top: 50%;
+    left: 36%;
+    background-color: rgba(85, 85, 85, 0.571);
+    color: white;
+    font-size: 20px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 10px;
+    height:75px;
+    width: 150px;
+    text-decoration: none;
+
+}
+
+#enterText{
+    text-decoration: none;
+    color: white;
+}
+
+#enter:hover {
+    background-color: rgba(255, 166, 0, 0.571);
+    font-size: 40px;
+  }
+
+
+a{
+    text-decoration: none;
+    font-family: 'Gentium Book Basic', serif;
+    color: gray
+    
+
+}
+h1{
+ text-align: center
+}
+
+h3{
+    text-align: center;
+}
+
+iframe{
+ padding-top: 50px;
+ padding-left: 15px;
+}
+
+
+.authorImage{
+    padding-top: 30px;
+    padding-left: 100px;
+    height:200px;
+    width: 250px;
+}
+
+/* ===== This is the content area on each page ====== */
+#header{
+    text-decoration:underline;
+    font-family: 'Gentium Book Basic', serif;
+    margin-bottom: 0px;
+}
+#content{
+    font-family: 'Gentium Book Basic', serif;
+    font-size: 20px;
+    text-align: justify;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#content2{
+    padding-left: 40px;
+    padding: top -50px;
+}
+
+.summary{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+  /* ===== Slideshow Elements==== */
+  button{
+    background-color: rgba(85, 85, 85, 0.571);
+    color: white;
+    font-size: 10px;
+    border-radius: 10px;
+    height:50px;
+    width: 55px;
+    text-decoration: none;
+}
+.press{
+    margin-left: 100px;
+    outline: none;
+}
+.press1{
+    margin-left: 100px;
+    outline: none;
+}
+
+/* ===== Navigation Bar ====== */
+
+nav{
+display: flex;
+justify-content: center;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+/* ===================================== */
+/* ===================================== */
+
+/* This is the parent container that holds the book image on each page
+as well as the content box that will animate on each page. */
+/* ===================================== */
+/* ===================================== */
+
+.parentContainer { position: relative; 
+}
+.imageBox{ position: absolute; 
+           left: 30px;
+           z-index: 2;
+}
+
+#slide{
+    height: 300px;
+    width: 300px;
+    padding-left: 60px;
+    padding-top: 40px;
+}
+
+.contentBox {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: example;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    position: absolute; 
+    left: 20px; 
+    margin-top: 15px;
+    height: 675px;
+    width: 500px;
+    z-index: 1;
+    background-image: url(/images/paper.jpg);
+    box-shadow: 10px 0px 25px;
+}
+
+
+    @keyframes example {
+        0%   {background-color: white; left: 250px; top:0px;}
+        100%  {background-color:white; left:575px; top:0px;}
+    }

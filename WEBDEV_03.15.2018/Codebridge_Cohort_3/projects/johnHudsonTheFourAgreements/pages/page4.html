@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Photo</title>
+    <link rel="stylesheet" href="/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Gentium+Book+Basic" rel="stylesheet">
+</head>
+<body>
+     <!-- Navigation Bar -->
+        <nav>
+                <ul class="home">
+                        <a href="/index.html">Home</a>
+                </ul>
+                <ul class="about">
+                        <a href="/pages/page1.html">About</a>
+                </ul>
+                <ul class="Agreements">
+                        <a href="/pages/page2.html">Agreements</a>
+                </ul>
+                <ul class="Video">
+                        <a href="/pages/page3.html">Video Summary</a>
+                </ul>
+                <ul class="Photos">
+                        <a href="/pages/page4.html">Photos</a>
+                </ul>
+        </nav>
+
+<!-- ==== BELOW IS WHERE THE PAGE BOOK PHOTO AND CONTENT SLIDING PAGE IS. -->
+    <div class="parentContainer">
+                <div class="imageBox">
+                    <img src="/images/BookPhoto.png" height="700" width="525" alt="" class="imagePage">
+                </div>
+            
+                <div class="contentBox">
+                        <h1 id="header">Photos</h1>
+                        <img src="../images/screensaver1.jpeg" name="show" id="slide"> 
+                        <br><button class="press" onclick=" changepic(-1)">Previous</button> 
+                        <button class="press1" onclick="changepic(1)">Next</button>
+                
+                </div>
+         </div><!-- end of Parent Container -->
+  <script src="../app.js"></script>
+</body>
+</html>

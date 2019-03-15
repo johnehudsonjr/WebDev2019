@@ -1,0 +1,12 @@
+<div>
+    <h1>This is a navbar</h1>
+    <button> Boring Button</button>
+</div>
+
+<h1>NEw BaNanA</h1>
+
+<form method="POST">
+   {% csrf_token %}
+   {{ newBananaForm.as_p }}
+   <button type="submit" >Save</button>
+</form>

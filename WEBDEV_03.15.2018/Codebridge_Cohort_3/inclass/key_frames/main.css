@@ -1,0 +1,29 @@
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    animation-direction: alternate-reverse;
+
+}
+
+/* to start call on on @keyframes */
+/* named our keyframe move */
+/* defined what */
+/* call on the animation property */
+@keyframes move {
+
+    0%{
+        margin:0px;
+    }
+
+    50%{
+        margin-top: 100px;
+    }
+
+    100%{
+        margin-left: 500px;
+        background-color: red;
+    }
+}
+
+    

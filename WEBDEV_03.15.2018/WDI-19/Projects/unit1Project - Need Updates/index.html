@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+    <script defer src="app.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+            <h1 id="headerH1" >Welcome To Atlanta - Jeopardy</h1>
+    </header>
+
+
+    <div class="parentContainer">
+        <div class="childContainer">
+            <div class = "category" id="catCollegeMascots">College Mascots</div>
+            <button type= "" class = "question" id="college100">$100</button>
+            <button type= "" class = "question" id="college200">$200</button>
+            <button type= "" class = "question" id="college300">$300</button>
+            <button type= "" class = "question" id="college400">$400</button>
+           
+        </div>
+        <div class="childContainer">
+            <div class = "category" id="catHQ">HQ'd in Atlanta</div>
+            <button type= "" class = "question" id="hq100">$100</button>
+            <button type= "" class = "question" id="hq200">$200</button>
+            <button type= "" class = "question" id="hq300">$300</button>
+            <button type= "" class = "question" id="hq400">$400</button>
+         
+        </div>
+
+        <div class="childContainer">
+            <div class = "category" id="catSports">Sports Teams</div>
+            <button type= "" class = "question" id="sports100">$100</button>
+            <button type= "" class = "question" id="sports200">$200</button>
+            <button type= "" class = "question" id="sports300">$300</button>
+            <button type= "" class = "question" id="sports400">$400</button>
+            
+        </div>
+
+        <div class="childContainer">
+            <div class = "category" id="catVenues">Venues in Atlanta</div>
+            <button type= "" class = "question" id="venue100">$100</button>
+            <button type= "" class = "question" id="venue200">$200</button>
+            <button type= "" class = "question" id="venue300">$300</button>
+            <button type= "" class = "question" id="venue400">$400</button>
+        </div>
+      
+    <div class="sideBar">
+
+        <div class="showQuestionContainer"> <h3>How Well Do You Know Atlanta?</h3>
+
+            <div class="questionHereBox" id="showQuestion">
+           
+            </div>
+
+            
+            
+        <div class="container">
+
+            <div class="wrapper">
+                <input type="radio" name="radioSelect" data-choice="0" class="radio">
+                <br>
+                <div class="firstChoice" id="select00"></div>
+            </div>
+
+            <div class="wrapper">
+                <input type="radio" name="radioSelect" data-choice="1" class="radio">
+                <br>
+                <div class="secondChoice" id="select01"></div>
+            </div>
+
+            <div class="wrapper">
+                <input type="radio" name="radioSelect" data-choice="2" class="radio">
+                <br>
+                <div class="thirdChoice" id="select02"></div>
+            </div>
+
+            <div class="wrapper">
+                <input type="radio" name="radioSelect" data-choice="3" class="radio">
+                <div class="fourthChoice" id="select03"></div>
+            </div>
+            <br>
+            <button type="submit" id="submitIt">SUBMIT</button>
+        </div>
+
+        </div>
+
+        <div class="scoreBoard">
+            <h1 id="scoreH1" >Your Score</h1>
+            <div class="scoreCount">
+                0
+            </div>
+        </div>
+    
+
+    </div>
+</div>   
+</body>
+</html>

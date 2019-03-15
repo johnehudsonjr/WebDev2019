@@ -1,0 +1,28 @@
+
+.box{
+    height: 200px;
+    width: 200px;
+    margin: 50px;
+
+}
+
+#box1 {
+    background-color: red;
+    animation: frame 2s forwards;
+
+}
+
+#box2 {
+    background-color: blue;
+    animation: frame 2s forwards;
+    animation-delay: 1s;
+    
+}
+
+@keyframes frame {
+   
+
+    100% {
+    transform: translate(800px, 0px);
+    }
+}

@@ -1,0 +1,37 @@
+*{
+    text-align: center;
+    justify-content: center;
+}
+
+.container{
+    border: solid black;
+    height: 75vh;
+    width: 50vw;
+    font-size: 24px;
+    display: flex;
+    box-shadow: 10px;
+    align-items: flex-start;
+    background-image: url(/images/yellowstone.jpg)
+    
+}
+
+input[type="text"]{
+    border:10px solid;
+    height: 100px;
+    width: 370px;
+    font-size: 2em;
+}
+
+input[type="button"] {
+    background-color: rgba(247, 244, 244, 0.153);
+    font-weight: bold;
+    font-size: 45px;
+    width: 125px;
+    border-radius: 6px;
+    justify-content: space-between;  
+}
+
+input:hover{
+    border: solid gray;
+    box-shadow: 10px 5px 20px;
+}

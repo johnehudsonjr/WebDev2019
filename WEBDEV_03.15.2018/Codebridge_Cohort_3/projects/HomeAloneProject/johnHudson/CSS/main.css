@@ -1,0 +1,490 @@
+/* Start */
+
+*{
+    margin: 0;
+    height:100%;
+
+}
+/* placed background image in container*/
+.backgroundImage{
+        height: 100%;
+        width: 100vw;
+        background-image: url(/images/moviePosterTop.jpg);
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-size:100% 100%;
+        position: cover;
+        height: auto;
+        z-index: -1;
+    
+}
+
+/* This is a vector image of snow. Will animate to simulate motion */
+.snowFall{
+    background-image: url(/images/snowPNG.png);
+    animation: snowFall 25s infinite linear;
+}
+
+/* This is the animation for the snow fall. */
+@keyframes snowFall {
+    0%{
+        background-position: 0px 0px;
+    }
+
+    100%{
+        background-position: 100px 649px;
+    }
+    
+}
+/* This container is where the grid will be placed 
+ This space also defines the entire website space.
+*/
+.containerHome{
+        display: grid;
+        background-color: rgba(20, 20, 20, 0.233);
+        height: 100%;
+        width:100vw;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        grid-template-areas: 
+                             "title title title title"
+                             "title title title title"
+                             "nav nav nav nav "
+                             "home cont cont cont"
+                             "about cont cont cont"
+                             "cast cont cont cont"
+                             "sneak cont cont cont"
+                             "social social social social"
+                             
+                                          
+}
+
+/* These are my current elements (divs) that are used in my html sheets. Using grid-area to form the grid */
+
+.title{
+    border: thin rgba(0, 0, 0, 0.404);
+    grid-area: title;
+    background-image: url(/images/homeAloneLogo.png);
+    max-width: 100%;
+    background-size: 370px;
+    position: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 200px;
+
+}
+
+/* ====== These are the navigation buttons ===== */
+.home {
+    border: -1px solid rgba(128, 128, 128, 0.459);
+    border-top: none;
+    border-left: none;
+    grid-area: home;
+}
+
+.about{
+    border: -1px solid rgba(128, 128, 128, 0.459);
+    border-top: none;
+    border-left: none;
+    grid-area: about;
+}
+
+.cast{
+    padding-top: 40px;
+    border: -1px solid rgba(128, 128, 128, 0.459);
+    border-top: none;
+    border-left: none;
+    grid-area: cast;
+}
+
+.sneak{
+    border: -1px solid rgba(128, 128, 128, 0.459);
+    border-top: none;
+    border-left: none;
+    grid-area: sneak;
+}
+
+.content{
+    background-color: rgba(0, 0, 0, 0.116);
+    border-top: none;
+    border-left: none;
+    grid-area: cont;
+    height:470px;
+    width: 650px;
+    max-width: 100%;
+    margin-top: 50px
+}
+
+.socialMedia{
+    grid-area: social;
+}
+.contentSneak{
+    max-width: 100%;
+}
+
+iframe{
+    padding-top: 50px;
+    padding-left: 75px;
+
+}
+/* ===== Created an id Tag for each section heading so I can easily alter a specific word. Used imagecolorpicker.com to match the color with words. =====  */
+
+/*=====  Navigation buttons FONT on homePage=====  */
+
+#homeHome{
+    color: rgb(243,204,24);
+    text-align: right;
+    font-size: 170%;
+    padding-top: 40px;
+    padding-right: 15px;
+    padding-bottom: 25px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-weight: 800;
+ 
+}
+
+#aboutHome{
+    color: rgba(253, 217, 11, 0.397);
+    text-align: right;
+    font-size: 125%;
+    padding-top: 40px;
+    padding-right: 15px;
+    padding-bottom: 25px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-weight: bold;
+
+
+}
+
+#castHome{
+    color: rgba(253, 217, 11, 0.397);
+    text-align: right;
+    font-size: 125%;
+    padding-top: 40px;
+    padding-right: 15px;
+    padding-bottom: 25px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+
+
+}
+
+#sneakHome{
+    color: rgba(253, 217, 11, 0.397);
+    text-align: right;
+    font-size: 125%;
+    padding-top: 40px;
+    padding-right: 15px;
+    padding-bottom: 25px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+
+
+}
+
+/* ===== Navigation buttons FONT on aboutPage ===== */
+#homeAbout{
+    color: rgba(253, 217, 11, 0.397);
+    text-align: right;
+    font-size: 125%;
+    padding-top: 40px;
+    padding-right: 15px;
+    padding-bottom: 25px;
+}
+
+#aboutAbout{
+    color: rgb(243,204,24);
+    text-align: right;
+    font-size: 170%;
+    padding-top: 40px;
+    padding-right: 15px;
+    padding-bottom: 25px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-weight: 800;
+   
+    
+}
+
+#castAbout{
+    color: rgba(253, 217, 11, 0.397);
+    text-align: right;
+    font-size: 125%;
+    padding-top: 40px;
+    padding-right: 15px;
+    padding-bottom: 25px;
+
+}
+
+#sneakAbout{
+    color: rgba(253, 217, 11, 0.397);
+    text-align: right;
+    font-size: 125%;
+    padding-top: 40px;
+    padding-right: 15px;
+    padding-bottom: 25px;
+}
+
+/* ===== Navigation buttons FONT on castPage ===== */
+
+#homeCast{
+    color: rgba(253, 217, 11, 0.397);
+    text-align: right;
+    font-size: 125%;
+    padding-top: 40px;
+    padding-right: 15px;
+    padding-bottom: 25px;
+
+}
+
+#aboutCast{
+    color: rgba(253, 217, 11, 0.397);
+    text-align: right;
+    font-size: 125%;
+    padding-top: 40px;
+    padding-right: 15px;
+    padding-bottom: 25px;
+}
+
+#castCast{
+    color: rgb(243,204,24);
+    text-align: right;
+    font-size: 170%;
+    padding-top: 40px;
+    padding-right: 15px;
+    padding-bottom: 25px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-weight: 800;
+   
+}
+
+#sneakCast{
+    color: rgba(253, 217, 11, 0.397);
+    text-align: right;
+    font-size: 125%;
+    padding-top: 40px;
+    padding-right: 15px;
+    padding-bottom: 25px;
+}
+
+/* ===== Navigation buttons FONT on sneakPage ===== */
+
+#homeSneak{
+    color: rgba(253, 217, 11, 0.397);
+    text-align: right;
+    font-size: 125%;
+    padding-top: 40px;
+    padding-right: 15px;
+    padding-bottom: 25px;
+
+}
+
+#aboutSneak{
+    color: rgba(253, 217, 11, 0.397);
+    text-align: right;
+    font-size: 125%;
+    padding-top: 40px;
+    padding-right: 15px;
+    padding-bottom: 25px;
+
+}
+
+#castSneak{
+    color: rgba(253, 217, 11, 0.397);
+    text-align: right;
+    font-size: 125%;
+    padding-top: 40px;
+    padding-right: 15px;
+    padding-bottom: 25px;
+
+}
+
+#sneakSneak{
+    color: rgb(243,204,24);
+    text-align: right;
+    font-size: 170%;
+    padding-top: 40px;
+    padding-right: 15px;
+    padding-bottom: 25px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-weight: 800;
+   
+    
+}
+
+/* ####### These are the navigation hover properties and values. ####### */
+
+.home:hover{
+    box-shadow:10px 5px 100px rgba(245, 245, 243, 0.26);
+    
+}
+
+.about:hover{
+    box-shadow:10px 5px 100px rgba(245, 245, 243, 0.26);
+    
+}
+
+.cast:hover{
+    box-shadow:10px 5px 100px rgba(245, 245, 243, 0.26);
+}
+
+.sneak:hover{
+    box-shadow:10px 5px 100px rgba(245, 245, 243, 0.26)
+}
+
+a{
+    text-decoration: none;
+    
+}
+
+img{
+    height: 105px;
+    width:105px;
+}
+li{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 10px;
+    list-style-type: none;
+}
+th{
+    color: white;
+    font-size: 150%;
+    padding-left: 20px;
+    padding-right: 0px;
+    text-align: justify;
+    text-decoration: underline;
+    letter-spacing: 2px;
+    font-family: 'Roboto', sans-serif;
+    
+}
+td{
+    color: white;
+    font-size: 100%;
+    padding-left: 20px;
+    padding-right: 0px;
+    text-align: justify;
+    letter-spacing: 1px;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+h2{
+    color: white;
+    font-size: 125%;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: underline;
+}
+h3{
+    color: white;
+    font-size: 80%;
+    padding-left: 40px;
+    padding-right: 0px;
+    text-align: justify;
+    letter-spacing: 1px;
+    font-family: 'Roboto', sans-serif;
+}
+/* ===== Content Pargaraph font */
+
+.paraAbout{
+    color: white;
+    font-size: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+}
+
+.imageAbout{
+    height: 150px;
+    width: 150px;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
+
+
+
+/* ========MODAL========= */
+
+.modal-trigger{
+    text-decoration: none;
+    padding:15px;
+    background:rgba(241, 241, 5, 0.384);
+    display:inline-block;
+    border-radius: 3px;
+    margin-top: 50px;
+    color: white;
+  }
+  .modal{
+    display:none;
+    background:rgba(0, 0, 0, .8);
+    position:fixed;
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+  }
+  .modal:target{
+    display:table;
+  }
+  .modalDialog{
+    display:table-cell;
+    vertical-align:middle;
+    
+  }
+  table{
+      padding-left: 15px;
+  }
+  
+  .modalContent{
+    background:rgba(247, 246, 246, 0.418);
+    width:60%;
+    min-width:300px;
+    margin:auto;
+    position:relative;
+    animation: slideUp 0.3s ease-in-out;
+  }
+  
+  .modalHeader{
+    background: rgba(0, 0, 0, 0.404);
+    color:rgba(209, 221, 42, 0.8);
+    padding:3px;
+    position:relative;
+    text-align: center;
+  }
+  
+  .modalTitle{
+    background-color:rgba(0, 0, 0, 0.61);
+    margin:0;
+  }
+
+  .modalClose{
+    color:white;
+    text-decoration: none;
+    position:absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+
+.modalLink{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
+
+  .modalText{
+    padding:0 1px;
+    
+  }
+ 
+  @keyframes slideUp{
+    from{
+      opacity:0;
+      bottom: -200px;
+    }
+    to{
+      opacity:1;
+      bottom:0;
+    }
+  }
